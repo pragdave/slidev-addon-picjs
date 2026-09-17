@@ -1,0 +1,15 @@
+/* ```picjs example — source on the left, diagram on the right */
+.picjs-example {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.picjs-example > * {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.picjs-example-source pre {
+  margin: 0;
+  max-height: 100%;
+  overflow: auto;
+}

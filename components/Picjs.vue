@@ -60,10 +60,10 @@ function render(el: HTMLElement) {
   const container = document.createElement('div')
   container.className = 'picjs-player'
   container.setAttribute('data-picjs-player', '')
-  // The palette CSS is emitted inside the static <svg>, but the player rebuilds
-  // the svg's children when it starts, so keep a copy outside the svg too.
+  // The player builds its own <svg> and does not emit palette CSS, so lift the
+  // palette <style> out of the static render and put it beside the player.
   const palette = result.svg.match(/<style>([\s\S]*?)<\/style>/)?.[1] ?? ''
-  container.innerHTML = `<style>${palette}</style>${result.svg}`
+  container.innerHTML = `<style>${palette}</style>`
   const ast = document.createElement('script')
   ast.type = 'application/json'
   ast.setAttribute('data-picjs-ast', '')

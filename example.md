@@ -44,9 +44,8 @@ petals.times(n => {
 ```picjs animated autoplay {width: '70%'}
 Palette.current = "shuksan"
 a = box "A"
-b = box "B" fill ~b2 at a.e + (3, 0)
+b = box "B" fill ~b2 at a.e + (2, 0)
 @ += 0.5
-move a.c to a.c + (0, 1) take 0.5
-then move a.c to b.c take 1 ease "cubicInOut"
-then move b.c to a.c - (4, 0) take 1
+move a.c to b.e + (1.5, 0) take 1 ease "cubicInOut"
+then move a.c to b.w - (1.5, 0) take 1 ease "cubicInOut"
 ```

@@ -62,9 +62,9 @@ fixes:
 1. Slidev pre-renders neighbouring slides at zero size, and picjs text laid out
    in a zero-size SVG is never repainted once the slide appears. Rendering is
    deferred until the host element has a width.
-2. The player rebuilds the SVG's children when it starts, dropping the palette
-   `<style>` that the static render puts inside the SVG. A copy is kept outside
-   the SVG.
+2. The player builds its own SVG and does not emit the palette CSS that the
+   static renderer puts inside its SVG, so shapes come out black. The component
+   lifts that `<style>` out of a static render and places it beside the player.
 
 ## Limitations
 

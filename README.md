@@ -83,6 +83,15 @@ npm run typecheck
 
 Slidev compiles the `.ts` and `.vue` files itself; there is no build step.
 
+## Related projects
+
+- [picjs](https://github.com/pragdave-devo/picjs) is the language and renderer;
+  this addon is only the Slidev glue. Its
+  [documentation and playground](https://pragdave-devo.github.io/picjs/) cover
+  the drawing and animation language.
+- [Slidev](https://sli.dev) and its
+  [addon guide](https://sli.dev/guide/write-addon).
+
 ## License
 
 MIT

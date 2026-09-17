@@ -3,13 +3,35 @@
   "version": "0.1.0",
   "description": "Slidev addon that renders picjs diagrams and animations from ```picjs code blocks",
   "type": "module",
-  "keywords": ["slidev-addon", "slidev", "picjs", "diagram", "svg", "animation"],
+  "keywords": [
+    "slidev-addon",
+    "slidev",
+    "picjs",
+    "diagram",
+    "svg",
+    "animation"
+  ],
   "author": "Dave Thomas (pragdave)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pragdave/slidev-addon-picjs.git"
+  },
+  "homepage": "https://github.com/pragdave/slidev-addon-picjs#readme",
+  "bugs": {
+    "url": "https://github.com/pragdave/slidev-addon-picjs/issues"
+  },
   "engines": {
     "slidev": ">=53.0.0"
   },
-  "files": ["setup", "components", "styles", "syntaxes", "README.md", "LICENSE.md"],
+  "files": [
+    "setup",
+    "components",
+    "styles",
+    "syntaxes",
+    "README.md",
+    "LICENSE.md"
+  ],
   "scripts": {
     "dev": "slidev example.md --open",
     "build": "slidev build example.md",
